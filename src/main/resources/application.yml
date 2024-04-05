@@ -5,3 +5,9 @@ eureka:
 server:
   port: 8761
   wait-time-in-ms-when-sync-empty: 0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: [ "prometheus" ]
